@@ -7,6 +7,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     color: #333;
+    text-align: center;
 }
 
 p, label {
@@ -17,21 +18,24 @@ input {
     border: 1px solid transparent;
     border-bottom: 1px solid #CCC;
     padding: 10px 0px;
+    border-radius: 20px;
 }
 
 input[type=text], input[type=number], input[type=date], input[type=file] {
     width: 400px;
+    padding-left: 12px;
 }
 
 textarea {
     padding: 10px 5px;
     width: 400px;
+    border-radius: 20px;
 }
 
 /* Cabeçalho da Página */
 
 .header {
-    height: 60px;
+    height: 120px;
     padding: 20px;
     background-color: #673AB7;
 }
@@ -39,4 +43,93 @@ textarea {
 .header h3 {
     color: #FFF;
     margin-top: 0px;
+}
+
+/* Container do formulário */
+
+.form-container {
+    background: #FFF;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -60px;
+}
+
+/* Cabeçalho do formulário */
+
+#paragrafoheader {
+    color: #673AB7;
+    border-bottom: 2px solid #673AB7;
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    height: 80px;
+    line-height: 45px;
+}
+
+/* Corpo do formulário */
+
+.form-body {
+    padding: 30px;
+    background: #FFF;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -60px;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.label {
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+.required-field {
+    color: #D80835;
+}
+
+.box-input {
+    margin-bottom: 30px;
+}
+
+.block {
+    display: block;
+}
+
+.optional_box {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.optional_list {
+    padding-left: 0px;
+}
+
+.optional_list {
+    list-style: none;
+}
+
+.btn-submit {
+    background-color: #673AB7;
+    color: #FFF;
+    border: 2px solid transparent;
+    width: 110px;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #FFF;
+    border-color: #673AB7;
+    color: #673AB7;
 }
